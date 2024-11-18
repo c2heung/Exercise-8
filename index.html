@@ -3,6 +3,7 @@
 <!--Note the use of Google Fonts in this exercise (see the below line in my <head> referencing the two fonts I use in the CSS file), Google offers free web fonts and they are *really* easy to implemment, see https://fonts.google.com/ for more info-->
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exercise 8: Responsive Web Design</title>
 <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
 <style>
@@ -13,11 +14,22 @@ font-size: 30px;
 background-color: aqua;
 }
 
-/* Responsive Design Additions */
-
-/*your CSS will go here*/
-
-/* misc. styling */
+@media screen and (max-width: 599px) {
+  /* For mobile phones: */
+    header, p, h1, h2, ul, li, img {
+      width: 100%;
+      background-color: #FFFF00; 
+  }
+}
+  
+  @media screen and (min-width: 600px) {
+  /* For Desktop: */
+    img {
+      width: 800px;}
+    
+    p {
+      width: 600px;}
+}
 
 ul a {
 color: magenta;
